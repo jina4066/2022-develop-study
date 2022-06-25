@@ -1,0 +1,5 @@
+required : 무조건 작성하게 하는것
+hr : 줄 나누기
+fieldest : 칸 만들기
+legend : 칸의 제목
+form : 입력 박스
