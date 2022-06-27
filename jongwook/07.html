@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>텍스트 표현 바꾸기</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+    h1 {
+      font-family: 'Hi Melody', cursive;
+      font-size: 3em;
+      color: rgba(242, 148, 148, 0.678);
+      text-shadow:5px 5px 3px #ccc;
+    }
+    .italic {
+      font-style: italic;
+    }
+    .accent {
+      font-weight: 700;
+      font-size: large;
+    }
+    p {
+      text-align: center;
+    }
+    .my-l {
+      list-style-type:square;
+    }
+    .my-l2 {
+      list-style-type: upper-alpha;
+    }
+    table {
+      caption-side: bottom;
+      border: 1px solid #222;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #222;
+      padding: 10px;
+    }
+    th {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">레드향</h1>
+  <p class="italic">껍질에 붉은 빛이 돌아 <span class="accent">레드향</span>이라 불린다.</p>
+  <p>레드향은 한라봉과 귤을 교배한 것으로</p>
+  <p>일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+  <h1 style="color: blue;">도서 시리즈</h1>
+  <ul class="my-l">
+    <li>Do it! 시리즈</li>
+    <li>된다 시리즈</li>
+    <li>DCM 프로 사진가</li>
+    <li>데이터과학 시리즈</li>
+  </ul>
+  <ol class="my-l2">
+    <li>Do it! 시리즈</li>
+    <li>된다 시리즈</li>
+    <li>DCM 프로 사진가</li>
+    <li>데이터과학 시리즈</li>
+  </ol>
+  <h2>상품 구성</h2>
+  <table>
+    <caption>선물용과 가정용 상품 구성</caption>
+    <tr>
+      <th>용도</th>
+      <th>중량</th>
+      <th>갯수</th>
+      <th>가격</th>
+    </tr>
+    <tr>
+      <td>선물용</td>
+      <td>3kg</td>
+      <td>11~16과</td>
+      <td>35,000원</td>
+    </tr>
+    <tr>
+      <td>선물용</td>
+      <td>5kg</td>
+      <td>18~26과</td>
+      <td>52,000원</td>
+    </tr>
+    <tr>
+      <td>가정용</td>
+      <td>3kg</td>
+      <td>11~16과</td>
+      <td>30,000원</td>
+    </tr>
+    <tr>
+      <td>가정용</td>
+      <td>5kg</td>
+      <td>18~26과</td>
+      <td>47,000원</td>
+    </tr>
+  </table>
+
+</body>
+</html>
