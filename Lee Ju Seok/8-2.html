@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS display 속성</title>
+    <style>
+        nav ul{
+            list-style: none;
+        }
+        nav ul li{
+            display: inline-block;
+            border: 1px solid #222;
+            padding: 20px;
+            margin:0 20px;
+        }
+        div {
+            padding: 20px;
+            margin: 10px;
+        }
+        #box1 {
+            background: #ffd800;
+            float: left;
+        }
+        #box2 {
+            background: #0094ff;
+            float: right;
+        }
+        #box3 {
+            background: #00ff21;
+        }
+        #box4 {
+            background: #a874ff;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>menu 1</li>
+            <li>menu 2</li>
+            <li>menu 3</li>
+            <li>menu 4</li>
+        </ul>
+    </nav>
+    <div id="box1">박스 1</div>
+    <div id="box2">박스 2</div>
+    <div id="box3">박스 3</div>
+    <div id="box4">박스 4</div>
+</body>
+</html>
