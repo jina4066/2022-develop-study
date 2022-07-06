@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>박스 모델</title>
+  <style>
+    div {
+      margin-bottom: 20px;
+    }
+    .box1 {
+      width: 200px;
+      height: 100px;
+      padding: 20px;
+      border: 10px solid #ccc;
+    }
+    .box2 {
+      box-sizing: border-box;
+      width: 200px;
+      height: 100px;
+      padding: 20px;
+      border: 10px solid #00f;   
+    }
+  </style>
+  <!-- 박스 모델 값 지정 방향 : top > right > bottom > left 순서 -->
+  <!-- margin 중첩 현상 : 요소를 세로로 배치할 경우, margin이 만날 때 값이 큰 쪽으로 겹쳐진다. -->
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+</body>
+</html>
