@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>속성 선택자</title>
+  <style>
+    v1 {
+      list-style: none;
+    }
+    li {
+      width: 120px;
+      display: inline-block;
+      margin: 10px;
+    }
+    li a [href] {
+      padding: 5px 20px;
+      font-size: 14px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    li a[href="#"]{
+      cursor:default;
+    }
+  </style>
+</head>
+<body>
+  <v1>
+    <li><a>메인 메뉴 : </a></li>
+    <li><a href="#">메뉴1</a></li>
+    <li><a href="b.html">메뉴2</a></li>
+    <li><a href="c.html">메뉴3</a></li>
+    <li><a href="d.html">메뉴4</a></li>
+  </v1>
+  
+</body>
+</html>
