@@ -1,0 +1,14 @@
+ul {
+  list-style: none;
+}
+li {
+  width:120px;
+  display: inline-block;
+  margin: 10px;
+}
+li a[href] {
+  padding: 5px 20px;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+}
