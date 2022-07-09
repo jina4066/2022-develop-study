@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <label>아이디:<input for="user_id" type="text"></label>
+      <label>비밀번호:<input for="passw" type="password"></label>
+      <input type="submit" value="로그인">
+    </fieldset>
+  </form>
+  <form>
+    <fieldset>
+      <legend>배송정보</legend>
+      <ul>
+        <li>
+          <label for="user_id">이름</label><input type="text">
+        </li>
+        <li>
+          <label for="address">배송주소</label><input type="addr" id="address">
+        </li>
+        <li>
+          <label for="email">이메일<input id="email" type="email"></label>
+        </li>
+        <li>
+          <label for="tel">연락처<input id="tel" type="tel"></label>
+        </li>
+      </ul>
+    </fieldset>
+  </form>
+  <form>
+    <fieldset>
+      <legend>상품 선택</legend>
+      <p><b>주문할 상품을 선택해 주세요.</b></p>
+      <input type="checkbox" value="p_3"><label>선물용 3kg</label>
+      <input type="checkbox" value="p_5"><label>선물용 3kg</label>
+      <input type="checkbox" value="f_3"><label>가정용 3kg</label>
+      <input type="checkbox" value="f_5"><label>가정용 3kg</label>
+      <p><b>포장 선택</b></p>
+      <label><input type="radio" value="c" name="present">선물 포장</label>
+      <label><input type="radio" value="uc" name="present">선물 포장 안 함</label>
+    </fieldset>
+    <input type="checkbox" value="p_3"><label>선물용 3kg<input type="number" min="0" max="5">개 (최대 5개)</label> 
+    <input type="checkbox" value="p_5"><label>선물용 5kg<input type="number" min="0" max="3">개 (최대 3개)</label> 
+    <input type="checkbox" value="p_5"><label>선물용 5kg<input type="range" min="0" max="3">개 (최대 3개)</label> 
+    <input type="checkbox" value="p_5"><label>선물용 5kg<input type="range" min="0" max="3">개 (최대 3개)</label> 
+  </form>
+  <input type="date">
+  <input type="month">
+  <input type="week">
+  <input type="time">
+  <input type="datetime-local">
+</body>
+</html>
