@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Transform</title>
+  <style>
+    #container {
+      width: 800px;
+      margin: 20px auto;
+    }
+    .origin {
+      width: 100px;
+      height: 100px;
+      float: left;
+      margin: 40px;
+    }
+    #rotate1:hover {
+      transform: rotateX(45deg); 
+    }
+    #rotate2:hover {
+      transform: rotate(-40deg); 
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="origin" id="rotate1">
+      <img src="tree.jpg">
+    </div>
+    <div class="origin" id="rotate2">
+      <img src="tree.jpg">
+    </div>
+  </div>
+</body>
+</html>
