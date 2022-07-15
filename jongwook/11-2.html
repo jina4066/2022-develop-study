@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin: 30px;
+      }
+      .bg-tr {
+        background-color: skyblue;
+        transition: all ease 1s;
+      }
+      .bg-tr:hover {
+        background-color: blue;
+      }
+      .border-tr {
+        background-color: orange;
+        border: 3px solid black;
+        transition: all linear 1.5s;
+      }
+      .border-tr:hover {
+        border: 3px solid red;
+        border-radius: 50%;
+      }
+      .box {
+        margin: 50px auto;
+        width: 100px;
+        height: 100px;
+        background-color: #fb5;
+        border: 1px solid #222;
+        transition: 2s ease-in;
+      }
+      .box:hover {
+        width: 200px;
+        height: 200px;
+        background-color: #f50;
+        transform: rotate(270deg);
+      }
+      #container {
+        width: 500px;
+        margin: 20px auto;
+      }
+      .box1 {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin: 50px;
+      }
+      #box2 {
+        background-color: #4cff00;
+        border: 1px solid transparent;
+        animation-name: shape;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+      #box3 {
+        background-color: #8f06b0;
+        border: 1px solid transparent;
+        animation-name: rotate;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes shape {
+        from {
+          border: 1px solid transparent;
+        }
+        to {
+          border: 1px solid #000;
+          border-radius: 50%;
+        }
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(45deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-tr"></div>
+    <div class="border-tr"></div>
+    <div class="box"></div>
+    <div id="container">
+      <div class="box1" id="box2"></div>
+      <div class="box1" id="box3"></div>
+    </div>
+  </body>
+</html>
