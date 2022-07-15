@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transform</title>
+  <style>
+    #container{
+      width:600px;
+      margin:20px auto;
+    }
+    .origin {
+      width: 100px;
+      height: 100px;
+      margin: 40px;
+      float: left;
+      border: 1px solid black;
+      perspective: 100px;
+      /*   원근감 추가 , rotateX의 부모 요소에만 적용해라!!  */
+
+    }
+    .origin > div {
+      width:100px;
+      height:100px;
+      background-color:orange;
+      transition: 2s;
+      
+    }
+    #rotatex:hover {
+      transform: rotateX(55deg);
+    }
+    #rotatey:hover {
+      transform: rotateX(55deg);
+    }
+    #rotatez:hover {
+      transform: rotateX(55deg);
+    }
+    #rotatexyz:hover {
+      transform: rotate3d(2.5, 1.2, -1.5, 55deg);
+    }
+
+    #skewx:hover {
+      transform: skewX(30deg);
+    }
+    #skewy:hover {
+      transform: skewY(30deg);
+    }
+    #skewxy:hover {
+      transform: skew(-25deg, -15deg);
+    }
+    h1 {
+				width:500px;
+				height:80px;
+				background-color:#222;
+				color:#fff;
+				font-weight:bold;			
+        line-height: 80px;
+        text-align: center;	 
+        transform: skewX(15deg);  /* x축 기준으로 15도 비틀기 */				
+			}
+  </style>
+  
+</head>
+<body>
+  <div id="container">
+    <h1>CSS 변형 함수 익히기</h1>
+    <div class="origin">
+      <div id="rotatex"></div>
+    </div>
+    <div class="origin">
+      <div id="rotatey"></div>
+    </div>
+    <div class="origin">		
+      <div id="rotatez"></div>
+    </div>
+    <div class="origin">	
+      <div id="rotatexyz"></div>	
+
+    <div class="origin">
+      <div id="skewx"></div>
+    </div>
+     <div class="origin">		
+      <div id="skewy"></div>
+    </div>
+     <div class="origin">	
+      <div id="skewxy"></div>	
+    </div>
+    
+  </div>
+  
+  
+  
+</body>
+</html>
