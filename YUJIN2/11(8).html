@@ -19,14 +19,12 @@
 			border: 1px solid transparent;
 			animation-name: shape;  /* 애니메이션 지정 */ 
 			animation-duration: 3s;  /* 애니메이션 실행 시간 */
-      animation-iteration-count: infinite;
 		}
 		#box2 {
 			background-color: #8f06b0;
 			border: 1px solid transparent;
 			animation-name: rotate;  /* 애니메이션 지정 */
 			animation-duration: 3s;  /* 애니메이션 실행 시간 */
-      animation-iteration-count: infinite;
 		}
 
 		@keyframes shape { /* shape 애니메이션 정의 */
@@ -44,27 +42,9 @@
 				transform:rotate(0deg)  /* 시작은 0도에서 */
 			}
 			to {
-				transform: rotate(1000deg);  /* 45도까지 회전 */
+				transform: rotate(45deg);  /* 45도까지 회전 */
 			}
 		}
-    .box3 {
-      width: 100px;
-      height: 100px;
-      margin: 60px auto;      
-      animation: rotating 1.5s infinite, background 1.5s infinite alternate;
-    }
-
-    @keyframes rotating {  /* 0도 -> x축 -180도 회전 -> y축 -180도 회전 */
-      from { transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
-      50% { transform: perspective(120px) rotateX(-180deg) rotateY(0deg); }
-      to { transform: perspective(120px) rotateX(-180deg) rotateY(-180deg); }
-    }
-
-    @keyframes background {  /* 배경색 빨강 -> 초록 -> 파랑 */
-      from { background-color: red; }
-      50% { background-color: green }
-      to { background-color: blue; }
-    }
 	</style>
 </head>
 
@@ -72,9 +52,6 @@
 	<div id="container">
 		<div class="box" id="box1"></div>
 		<div class="box" id="box2"></div>
-    
 	</div>
-  <br><br><br><br><br><br><br><br>
-  <div class="box3"></div>
 </body>
 </html>

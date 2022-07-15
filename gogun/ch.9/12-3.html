@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Grid Layout</title>
+  <style>
+    #wrapper{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr); /*칼럼의 개수 지정*/
+      grid-template-rows:minmax(100px, auto); /* 칼럼의 크기 지정 */
+    }
+  .items{
+    padding:10px;
+    background-color:#eee;
+  }   
+  .items:nth-child(odd){
+    background-color:#bbb;
+  }
+  #wrapper2{
+        width:700px;
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows:repeat(3, 100px);
+      }
+      .box{
+        padding:15px;
+        color:#fff;
+        font-weight:bold;
+        text-align:center;
+      }   
+      .box1 {
+        background-color:#3689ff;
+        grid-column:1/4;
+        /* 줄을 하나만 차지할 경우 따로 지정하지 않아도 됨 */
+      }
+      .box2 {
+        background-color:#00cf12;
+        grid-row:2/4;
+        /* grid-column:1/2; */
+        /* 마찬가지로 칼럼을 하나만 차지하므로 따로 지정하지 않아도 됨 */
+        /* grid-column-start:1; */
+      }
+      .box3 {
+        background-color:#ff9019;
+        grid-column:2/4;
+        /* grid-row:2/3; */
+        grid-row-start:2;
+        /* 한 줄만 차지하므로 시작하는 줄 번호만 적어도 됨 */
+        }
+      .box4 {
+        background-color:#ffd000;
+        grid-column-start:3;
+        grid-row-start:3;
+      }
+      #wrapper3{
+        width:700px;
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows:repeat(3, 100px);
+        grid-template-areas:
+        "box5 box5 box5"
+        "box6 box7 box7"
+        "box6 . box8";
+      }
+       
+      .box5 {
+        background-color:#3689ff;
+        grid-area: box5;
+  
+      }
+      .box6 {
+        background-color:#00cf12;
+        grid-area:box6;
+
+      }
+      .box7 {
+        background-color:#ff9019;
+        grid-area:box7;
+        
+        }
+      .box8 {
+        background-color:#ffd000;
+        grid-area:box8;
+      }
+  </style>
+
+</head>
+<body>
+  <div id="wrapper">
+    <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, reprehenderit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
+    <div class="items">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+    <div class="items">Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+    <div class="items">Lorem ipsum dolor sit.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+    <div class="items">Lorem, ipsum dolor.</div>
+  </div>
+  <div id="wrapper2">
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+    <div class="box box4">box4</div>
+  </div>
+  <div id="wrapper3">
+    <div class="box box5">box5</div>
+    <div class="box box6">box6</div>
+    <div class="box box7">box7</div>
+    <div class="box box8">box8</div>
+  </div>
+</body>
+</html>

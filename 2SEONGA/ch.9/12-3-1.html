@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Layout</title>
+  <style>
+    #wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-rows: minmax(100px, auto);
+    }
+    .items {
+      padding: 10px;
+      background-color: #eee;
+    }
+    .items:nth-child(odd) {
+      background-color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="items">
+      Lorem 1
+    </div>
+    <div class="items">
+      Lorem 2
+    </div>
+    <div class="items">
+      Lorem 3
+    </div>
+    <div class="items">
+      Lorem 4
+    </div>
+    <div class="items">
+      Lorem 5
+    </div>
+  </div>
+</body>
+</html>
