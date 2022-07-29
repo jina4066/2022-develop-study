@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Assignment3 {
     public static void main(String[] args) throws Exception {
         double F;
-        float C;
+        double C;
         Scanner sc = new Scanner(System.in);
         System.out.print("섭씨 온도를 입력하세요 : ");
         C = sc.nextFloat();
