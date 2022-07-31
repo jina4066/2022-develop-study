@@ -8,6 +8,7 @@ public class Assignment3 {
     Scanner sc = new Scanner(System.in);
     System.out.println("화씨를 입력하세요: ");
     fah = sc.nextDouble();
+    sc.close();
 
     cel = ((fah-32.0)/1.8);
 
