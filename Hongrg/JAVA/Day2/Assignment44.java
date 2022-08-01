@@ -14,18 +14,18 @@ public class Assignment44 {
     refine = sc.nextInt();
     general = sc.nextInt();
 
-    if(major >= 70){
-      System.out.println("졸업 가능 여부 : 졸업 가능") ;
-    }else if(general >= 30){
-      System.out.println("졸업 가능 여부 : 졸업 가능") ;
-    }else if(refine >= 30){
-      System.out.println("졸업 가능 여부 : 졸업 가능") ;
-    }else if(refine + general >= 80){
-      System.out.println("졸업 가능 여부 : 졸업 가능") ;
-    }else if(refine + general + major >= 140){
-      System.out.println("졸업 가능 여부 : 졸업 가능") ;
-    }else{
+    if(major < 70){
       System.out.println("졸업 가능 여부 : 졸업 불가능") ;
+    }else if(general < 30){
+      System.out.println("졸업 가능 여부 : 졸업 불가능") ;
+    }else if(refine < 30){
+      System.out.println("졸업 가능 여부 : 졸업 불가능") ;
+    }else if(refine + general < 80){
+      System.out.println("졸업 가능 여부 : 졸업 불가능") ;
+    }else if(refine + general + major < 140){
+      System.out.println("졸업 가능 여부 : 졸업 불가능") ;
+    }else{
+      System.out.println("졸업 가능 여부 : 졸업 가능") ;
     }
 
     sc.close();
