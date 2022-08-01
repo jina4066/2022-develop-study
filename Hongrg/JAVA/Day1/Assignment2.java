@@ -1,4 +1,4 @@
-public class assinment3 {
+public class Assignment2 {
   /**
    * @param args
    */
