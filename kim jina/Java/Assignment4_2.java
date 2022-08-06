@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Assignment5 {
+public class Assignment4_2 {
     public static void main(String[] args) throws Exception {
 
         Scanner sc = new Scanner(System.in);
