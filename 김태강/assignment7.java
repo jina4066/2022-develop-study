@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class assignment7 {
+public class Assignment7 {
   // 1번 문제
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
